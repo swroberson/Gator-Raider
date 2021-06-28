@@ -1,7 +1,5 @@
-// Samuel Roberson
-// UFID 41110745
-
 package edu.ufl.cise.cs1.controllers;
+
 import game.controllers.AttackerController;
 import game.models.*;
 import java.awt.*;
@@ -19,7 +17,7 @@ public final class StudentAttackerController implements AttackerController
 		int minimum = 57005, distance; // minimum distance and distance from attacker variables
 		Node closest = null;		// closest node variable
 
-		for (Node temp : list) // iterates thru list argument, creating temporary node objects for comparison
+		for (Node temp : list) // temporary node objects for comparison
 		{
 			distance = gatorNode.getPathDistance(temp);  // distance from gator to temp node object
 			if (distance < minimum)        // if distance from gator to list node is less than the minimum
